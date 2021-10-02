@@ -13,6 +13,7 @@ echo "Installing custom configuration" \
   && cp config.fish $fish_config_dir/
 
 echo "Installing custom autoloading functions" \
+  && mkdir -p $fish_config_dir/functions \
   && cp functions/*.fish $fish_config_dir/functions/
 
 # Handle additional plugins.
