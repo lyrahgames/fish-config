@@ -19,3 +19,6 @@ sudo pacman -S --needed --noconfirm bat fzf fd # Needed for fzf.fish
 cp fish_plugins $fish_config_dir/
 # Sync plugins by using fisher.
 fisher update
+
+# Set fish as default shell.
+chsh -s (which fish)
