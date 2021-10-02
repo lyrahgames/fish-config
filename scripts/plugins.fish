@@ -1,8 +1,5 @@
-function install_plugins
-  # Install fisher plugin manager.
+function install_fisher
   curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
-  # Sync plugins by using plugin list.
-  fisher update
 end
 
 function download_fonts
