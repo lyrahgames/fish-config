@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
 # Fullfill fish shell dependency.
-sudo pacman -S fish
+sudo pacman -S --needed --noconfirm fish
 # Run the fish script.
 ./run.fish
