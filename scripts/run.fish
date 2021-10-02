@@ -2,10 +2,10 @@ source scripts/plugins.fish
 source scripts/basic.fish
 source scripts/default.fish
 
-install_plugins
-
 # Copy configuration to destination.
 copy (pwd)/config $HOME/.config/fish
+
+install_plugins
 
 # Set fish as default shell.
 make_default
