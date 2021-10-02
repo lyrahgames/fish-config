@@ -11,7 +11,8 @@ if [ "$ID" == "arch" ]; then
   echo "Arch Linux Distribution"
   source arch/run.sh
 elif [ "$ID" == "ubuntu" ]; then
-    echo "Ubuntu is not yet supported."
+  echo "Ubuntu Distribution"
+  source ubuntu/run.sh
 else
-    echo "Shitty system. Fuck you."
+  echo "Operating system or Linux distribution is not supported."
 fi
