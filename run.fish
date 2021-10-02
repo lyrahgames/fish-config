@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 
 # Fulfill system package requirements.
-sudo pacman -Sy --needed --noconfirm which bat fzf fd
+sudo pacman -Sy --needed --noconfirm which wget bat fzf fd
 
 # Variables
 set fish_config_dir $HOME/.config/fish
@@ -26,6 +26,14 @@ fisher update
 
 # Set fish as default shell.
 chsh -s (which fish)
+
+# Download fonts for tide.
+wget "https://github.com/IlanCosman/tide/blob/assets/fonts/mesloLGS_NF_regular.ttf?raw=true" -O "MesloLGS NF Regular.ttf"
+wget "https://github.com/IlanCosman/tide/blob/assets/fonts/mesloLGS_NF_bold.ttf?raw=true" -O "MesloLGS NF Bold.ttf"
+wget "https://github.com/IlanCosman/tide/blob/assets/fonts/mesloLGS_NF_italic.ttf?raw=true" -O "MesloLGS NF Italic.ttf"
+wget "https://github.com/IlanCosman/tide/blob/assets/fonts/mesloLGS_NF_bold_italic.ttf?raw=true" -O "MesloLGS NF Bold Italic.ttf"
+
+echo "Consider install the downloaded fonts next for use in Tide prompt."
 
 if status is-interactive
   exit
