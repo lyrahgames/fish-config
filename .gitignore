@@ -1,0 +1,10 @@
+*
+!*/
+
+!*.sh
+!*.fish
+!fish_plugins
+
+!*.md
+
+!.git*
