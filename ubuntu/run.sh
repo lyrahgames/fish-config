@@ -11,3 +11,5 @@ sudo add-apt-repository ppa:fish-shell/release-3 \
 
 # Run interactive fish script.
 fish --interactive scripts/run.fish
+# Set Ubuntu-specific aliases for commands.
+fish ubuntu/alias.fish
