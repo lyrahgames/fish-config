@@ -14,7 +14,7 @@ cp functions/*.fish $fish_config_dir/functions/
 # Install fisher package manager.
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 # Fulfill requirements for additional plugins.
-sudo pacman -S --needed --noconfirm bat fzf fd # Needed for fzf.fish
+sudo pacman -Sy --needed --noconfirm bat fzf fd # Needed for fzf.fish
 # Copy fisher plugins file.
 cp fish_plugins $fish_config_dir/
 # Sync plugins by using fisher.
