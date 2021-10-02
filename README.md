@@ -6,18 +6,21 @@
 - `sudo`
 
 ## Usage
-Run the following commands
+Clone the repository by directly using `git`.
 
     git clone https://github.com/lyrahgames/fish-config.git
+
+Or use the GitHub CLI.
+
+    gh repo clone lyrahgames/fish-config
+
+Change into the repository root directory.
+
     cd fish-config
 
-If `fish` is not already installed use the following command.
+**Arch Linux:**
 
-    ./run.sh
-
-Otherwise, run the following script.
-
-    ./run.fish
+    arch/run.fish
 
 ## References
 - [Fish Shell](https://fishshell.com/)
