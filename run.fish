@@ -21,4 +21,4 @@ cp fish_plugins $fish_config_dir/
 fisher update
 
 # Set fish as default shell.
-chsh -s (which fish)
+chsh -s /usr/bin/fish
