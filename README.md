@@ -1,7 +1,7 @@
 # Fish Shell Default Configuration
 
 ## Requirements
-- Arch Linux
+- Arch Linux | Ubuntu
 - Git
 - `sudo`
 
@@ -14,13 +14,9 @@ Or use the GitHub CLI.
 
     gh repo clone lyrahgames/fish-config
 
-Change into the repository root directory.
+Run the main script for installing the configuration.
 
-    cd fish-config
-
-**Arch Linux:**
-
-    arch/run.fish
+    fish-config/run.sh
 
 ## References
 - [Fish Shell](https://fishshell.com/)
