@@ -2,6 +2,7 @@
 
 ## Requirements
 - Arch Linux
+- Git
 - `sudo`
 
 ## Usage
