@@ -1,10 +1,22 @@
-# Fish Shell Default Configuration
+<h1 align="center">
+    Fish Shell Default Configuration
+</h1>
+<p align="center">
+    Repository to automatically install and configure the fish shell.
+</p>
+
+<p align="center">
+    <img src="https://img.shields.io/github/languages/top/lyrahgames/fish-config.svg?style=for-the-badge">
+    <img src="https://img.shields.io/github/languages/code-size/lyrahgames/fish-config.svg?style=for-the-badge">
+    <img src="https://img.shields.io/github/repo-size/lyrahgames/fish-config.svg?style=for-the-badge">
+    <a href="COPYING.md">
+        <img src="https://img.shields.io/github/license/lyrahgames/fish-config.svg?style=for-the-badge&color=blue">
+    </a>
+</p>
 
 ## Requirements
-- Arch Linux | Ubuntu
-- Git
-- `sudo`
-- `bash`
+- Operating System: Arch Linux | Ubuntu
+- Dependencies:`git` | `sudo` | `bash`
 
 ## Usage
 Clone the repository by directly using `git`.
