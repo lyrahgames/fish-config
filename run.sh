@@ -7,6 +7,7 @@ cd `dirname "$0"`
 # by reading '/etc/os-release' file.
 source /etc/os-release
 
+# Run OS-specific installation script.
 if [ "$ID" == "arch" ]; then
   echo "Arch Linux Distribution"
   source arch/run.sh
@@ -15,4 +16,6 @@ elif [ "$ID" == "ubuntu" ]; then
   source ubuntu/run.sh
 else
   echo "Operating system or Linux distribution is not supported."
+  echo "Install fish and the required dependencies manually."
+  echo "Afterwards, execute 'fish -i scripts/run.fish' to set up configuration."
 fi
