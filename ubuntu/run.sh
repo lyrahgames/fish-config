@@ -1,7 +1,7 @@
 # Install required dependencies.
 sudo apt-get update \
   && sudo apt-get install -y \
-    software-properties-common wget curl bat fzf fd-find
+    software-properties-common wget curl bat fzf fd-find fontconfig
 
 # Install latest fish shell.
 sudo add-apt-repository ppa:fish-shell/release-3 \

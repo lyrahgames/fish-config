@@ -12,10 +12,33 @@ function install_plugins
   sync_plugins
 end
 
-function download_fonts
-  # Download fonts for tide.
-  wget -q "https://github.com/IlanCosman/tide/blob/assets/fonts/mesloLGS_NF_regular.ttf?raw=true" -O "MesloLGS NF Regular.ttf"
-  wget -q "https://github.com/IlanCosman/tide/blob/assets/fonts/mesloLGS_NF_bold.ttf?raw=true" -O "MesloLGS NF Bold.ttf"
-  wget -q "https://github.com/IlanCosman/tide/blob/assets/fonts/mesloLGS_NF_italic.ttf?raw=true" -O "MesloLGS NF Italic.ttf"
-  wget -q "https://github.com/IlanCosman/tide/blob/assets/fonts/mesloLGS_NF_bold_italic.ttf?raw=true" -O "MesloLGS NF Bold Italic.ttf"
+function install_fonts
+  set user_font_dir $HOME/.local/share/fonts
+  mkdir -p $user_font_dir
+
+  set file "$user_font_dir/MesloLGS NF Regular.ttf"
+  if ! test -f $file
+    echo "Installing '$file'"
+    wget -q "https://github.com/IlanCosman/tide/blob/assets/fonts/mesloLGS_NF_regular.ttf?raw=true" -O $file
+  end
+
+  set file "$user_font_dir/MesloLGS NF Bold.ttf"
+  if ! test -f $file
+    echo "Installing '$file'"
+    wget -q "https://github.com/IlanCosman/tide/blob/assets/fonts/mesloLGS_NF_bold.ttf?raw=true" -O $file
+  end
+
+  set file "$user_font_dir/MesloLGS NF Italic.ttf"
+  if ! test -f $file
+    echo "Installing '$file'"
+    wget -q "https://github.com/IlanCosman/tide/blob/assets/fonts/mesloLGS_NF_italic.ttf?raw=true" -O $file
+  end
+
+  set file "$user_font_dir/MesloLGS NF Bold Italic.ttf"
+  if ! test -f $file
+    echo "Installing '$file'"
+    wget -q "https://github.com/IlanCosman/tide/blob/assets/fonts/mesloLGS_NF_bold_italic.ttf?raw=true" -O $file
+  end
+
+  fc-cache $user_font_dir
 end
