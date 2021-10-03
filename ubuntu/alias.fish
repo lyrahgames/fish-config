@@ -1,5 +1,2 @@
-for file in ubuntu/functions/*.fish
-  set func (basename $file .fish)
-  source $file
-  funcsave $func
-end
+source scripts/basic.fish
+load_functions ubuntu/functions

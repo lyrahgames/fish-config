@@ -4,6 +4,7 @@
 - Arch Linux | Ubuntu
 - Git
 - `sudo`
+- `bash`
 
 ## Usage
 Clone the repository by directly using `git`.
